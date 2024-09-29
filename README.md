@@ -2,7 +2,7 @@
 #### A Dapp providing secure content distribution by leveraging Zero knowledge proofs and Soul Bound Tokens with high transaction throughput from the scroll sepolia network
 
 ### Deployments
-- Deployed on the scroll sepolia testnetwork - [https://sepolia.scrollscan.com/address/0x3a92c403ccfd005c19b4a75e8ee178f3963db85c](https://sepolia.scrollscan.com/address/0x3a92c403ccfd005c19b4a75e8ee178f3963db85c)
+- Deployed on the scroll sepolia testnetwork - [https://sepolia.scrollscan.com/address/0x6e1a6ed3ed3fe7f7a5c34b26ff8cac43af0411de](https://sepolia.scrollscan.com/address/0x6e1a6ed3ed3fe7f7a5c34b26ff8cac43af0411de)
 
 ### Setting up the project locally
 
