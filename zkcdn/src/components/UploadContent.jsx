@@ -272,7 +272,7 @@ const ZkCDNMinting = () => {
                             <span>View on IPFS</span>
                           </a>
                           <a
-                            href={`https://cardona-zkevm.polygonscan.com/tx/${txHash}`}
+                            href={`https://sepolia.scrollscan.com/tx/${txHash}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-200"
