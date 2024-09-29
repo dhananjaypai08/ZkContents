@@ -1,6 +1,6 @@
 {
-    "address": "0x3A92c403CcfD005C19B4a75E8ee178f3963dB85C",
-    "prevaddress": "0xB32fdc2DED2DffCfA3442Def90fb13AFBa5683A2",
+    "address": "0x6e1A6ED3eD3FE7f7a5c34B26ff8cAc43Af0411DE",
+    "prevaddress": "0x3A92c403CcfD005C19B4a75E8ee178f3963dB85C",
     "abi": [
         {
             "inputs": [],
@@ -261,7 +261,7 @@
                     "type": "string"
                 }
             ],
-            "stateMutability": "nonpayable",
+            "stateMutability": "view",
             "type": "function"
         },
         {

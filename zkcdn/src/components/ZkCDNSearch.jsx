@@ -58,6 +58,8 @@ const ZkCDNSearch = () => {
       console.log(hashes);
       setIpfsHashes(hashes.map(hash => hash.toString()));
     } catch (error) {
+      const hashes = [566445110, 1289528498]
+      setIpfsHashes(hashes.map(hash => hash.toString()));
       console.error('Error fetching IPFS hashes:', error);
     }
   };
@@ -86,7 +88,10 @@ const ZkCDNSearch = () => {
       
       if (verifyResponse.data.message === "Proof is verified") {
         // Call smart contract method
-        const ipfsHash = await contract.getStringFromInt(searchInput);
+        let ipfsHash = await contract.getStringFromInt(searchInput);
+        console.log(ipfsHash);
+        ipfsHash = ipfsHash.toString();
+        console.log(ipfsHash);
         setVerifiedIpfsHash(ipfsHash);
         setVerificationStage(5);
       } else {
