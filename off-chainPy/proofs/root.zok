@@ -1,0 +1,8 @@
+def main(private field[10] a, field b) -> bool {
+    bool mut res = false;
+    for u32 i in 0..10 {
+        res = res || (a[i] == b);
+    }
+    assert(res);
+    return res;
+}

@@ -1,0 +1,21 @@
+{
+  "inputs": [
+    {
+      "name": "a",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 10,
+        "type": "field"
+      }
+    },
+    {
+      "name": "b",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "bool"
+  }
+}
