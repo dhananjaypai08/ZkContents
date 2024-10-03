@@ -1,6 +1,5 @@
 {
-    "address": "0x6e1A6ED3eD3FE7f7a5c34B26ff8cAc43Af0411DE",
-    "prevaddress": "0x3A92c403CcfD005C19B4a75E8ee178f3963dB85C",
+    "address": "0xE5220548856b1872c3207baaeE317de4714D2EfF",
     "abi": [
         {
             "inputs": [],
@@ -81,6 +80,19 @@
                 }
             ],
             "name": "Encrypted_CID",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "encrypted_cid",
+                    "type": "uint256"
+                }
+            ],
+            "name": "Mapping",
             "type": "event"
         },
         {

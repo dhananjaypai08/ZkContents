@@ -8,9 +8,9 @@ dataSources:
     name: ZkCDN
     network: scroll-sepolia
     source:
-      address: "0x6e1a6ed3ed3fe7f7a5c34b26ff8cac43af0411de"
+      address: "0xE5220548856b1872c3207baaeE317de4714D2EfF"
       abi: ZkCDN
-      startBlock: 6802180
+      startBlock: 6853948
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -20,6 +20,7 @@ dataSources:
         - ApprovalForAll
         - ConvertedString
         - Encrypted_CID
+        - Mapping
         - Mint
         - OwnershipTransferred
         - Transfer
@@ -35,6 +36,8 @@ dataSources:
           handler: handleConvertedString
         - event: Encrypted_CID(uint256)
           handler: handleEncrypted_CID
+        - event: Mapping(uint256)
+          handler: handleMapping
         - event: Mint(address,uint256)
           handler: handleMint
         - event: OwnershipTransferred(indexed address,indexed address)

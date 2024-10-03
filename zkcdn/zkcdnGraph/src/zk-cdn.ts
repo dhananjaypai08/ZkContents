@@ -3,6 +3,7 @@ import {
   ApprovalForAll as ApprovalForAllEvent,
   ConvertedString as ConvertedStringEvent,
   Encrypted_CID as Encrypted_CIDEvent,
+  Mapping as MappingEvent,
   Mint as MintEvent,
   OwnershipTransferred as OwnershipTransferredEvent,
   Transfer as TransferEvent
@@ -12,6 +13,7 @@ import {
   ApprovalForAll,
   ConvertedString,
   Encrypted_CID,
+  Mapping,
   Mint,
   OwnershipTransferred,
   Transfer
@@ -62,6 +64,19 @@ export function handleConvertedString(event: ConvertedStringEvent): void {
 
 export function handleEncrypted_CID(event: Encrypted_CIDEvent): void {
   let entity = new Encrypted_CID(
+    event.transaction.hash.concatI32(event.logIndex.toI32())
+  )
+  entity.encrypted_cid = event.params.encrypted_cid
+
+  entity.blockNumber = event.block.number
+  entity.blockTimestamp = event.block.timestamp
+  entity.transactionHash = event.transaction.hash
+
+  entity.save()
+}
+
+export function handleMapping(event: MappingEvent): void {
+  let entity = new Mapping(
     event.transaction.hash.concatI32(event.logIndex.toI32())
   )
   entity.encrypted_cid = event.params.encrypted_cid

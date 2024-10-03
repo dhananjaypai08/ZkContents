@@ -5,6 +5,7 @@ import {
   ApprovalForAll,
   ConvertedString,
   Encrypted_CID,
+  Mapping,
   Mint,
   OwnershipTransferred,
   Transfer
@@ -87,6 +88,21 @@ export function createEncrypted_CIDEvent(encrypted_cid: BigInt): Encrypted_CID {
   )
 
   return encryptedCidEvent
+}
+
+export function createMappingEvent(encrypted_cid: BigInt): Mapping {
+  let mappingEvent = changetype<Mapping>(newMockEvent())
+
+  mappingEvent.parameters = new Array()
+
+  mappingEvent.parameters.push(
+    new ethereum.EventParam(
+      "encrypted_cid",
+      ethereum.Value.fromUnsignedBigInt(encrypted_cid)
+    )
+  )
+
+  return mappingEvent
 }
 
 export function createMintEvent(to: Address, encrypted_cid: BigInt): Mint {

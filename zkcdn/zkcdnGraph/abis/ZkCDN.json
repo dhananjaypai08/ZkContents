@@ -81,6 +81,19 @@
     "inputs": [
       {
         "indexed": false,
+        "internalType": "uint256",
+        "name": "encrypted_cid",
+        "type": "uint256"
+      }
+    ],
+    "name": "Mapping",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
         "internalType": "address",
         "name": "to",
         "type": "address"
