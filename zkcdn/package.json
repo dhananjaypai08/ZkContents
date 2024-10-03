@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@graphprotocol/client-cli": "^3.0.7",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.1.8",
     "@types/react": "^18.3.3",

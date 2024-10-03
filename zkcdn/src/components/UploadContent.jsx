@@ -117,7 +117,7 @@ const ZkCDNMinting = () => {
   const mintingStages = [
     { title: 'Start Minting', icon: Loader2 },
     { title: 'Uploading to IPFS', icon: Loader2 },
-    { title: 'Uploaded to IPFS', icon: Check },
+    { title: 'Encrypting IPFS Hash', icon: Check },
     { title: 'Minting Soul Bound Token', icon: Loader2 },
     { title: 'Content Uploaded and Token Minted', icon: Check },
   ];

@@ -12,7 +12,7 @@ const ZkCDNSearch = () => {
   const [contract, setContract] = useState(null);
   const [isConnected, setIsConnected] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);
-  const [ipfsHashes, setIpfsHashes] = useState([]);
+  const [ipfsHashes, setIpfsHashes] = useState([566445110, 3481212704]);
   const [searchInput, setSearchInput] = useState('');
   const [verificationStage, setVerificationStage] = useState(0);
   const [isVerifying, setIsVerifying] = useState(false);
@@ -58,8 +58,6 @@ const ZkCDNSearch = () => {
       console.log(hashes);
       setIpfsHashes(hashes.map(hash => hash.toString()));
     } catch (error) {
-      const hashes = [566445110, 1289528498]
-      setIpfsHashes(hashes.map(hash => hash.toString()));
       console.error('Error fetching IPFS hashes:', error);
     }
   };

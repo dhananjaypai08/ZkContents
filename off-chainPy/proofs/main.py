@@ -35,7 +35,7 @@ async def compile_circuit():
 @app.get("/generate_witness")
 async def generate_witness(unique_ipfs_integer: int):
     try:
-        public_data = [1,2,3,4,2218678120,5,6,7,8,9]
+        public_data = [1,3481212704,3,4,566445110,5,6,7,8,9]
         data = public_data + [unique_ipfs_integer]
         result = subprocess.run(["zokrates", "compute-witness", 
                                  "-a"] + data, 

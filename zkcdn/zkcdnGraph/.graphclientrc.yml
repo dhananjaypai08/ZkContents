@@ -1,0 +1,5 @@
+sources:
+  - name: zkcdngraph
+    handler:
+      graphql:
+        endpoint: https://api.studio.thegraph.com/query/90589/zkcdngraph/version/latest
