@@ -1,0 +1,8 @@
+{
+  "scroll-sepolia": {
+    "ZkCDN": {
+      "address": "0x6e1a6ed3ed3fe7f7a5c34b26ff8cac43af0411de",
+      "startBlock": 6802180
+    }
+  }
+}
