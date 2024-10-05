@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Zap, Globe, Database, Cloud, Lock, Menu, UploadCloudIcon, FileDownIcon } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Globe, Database, Cloud, Lock, Menu, UploadCloudIcon, FileDownIcon, MessageCircleIcon, ChartAreaIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -38,6 +38,22 @@ const LandingPage = () => {
             >
               Get Content
               <FileDownIcon className="ml-2 h-5 w-5" />
+            </motion.a>
+            <motion.a
+              href="/dashboard"
+              className="bg-gradient-to-r from-blue-500 to-indigo-800 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center shadow-lg"
+              whileHover={{ boxShadow: "0 0 15px rgba(59, 130, 246, 0.3)" }}
+            >
+              Graph Dashboard
+              <ChartAreaIcon className="ml-2 h-5 w-5" />
+            </motion.a>
+            <motion.a
+              href="/graphchatbot"
+              className="bg-gradient-to-r from-blue-500 to-indigo-800 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center shadow-lg"
+              whileHover={{ boxShadow: "0 0 15px rgba(59, 130, 246, 0.3)" }}
+            >
+              Chat with Subgraph Data
+              <MessageCircleIcon className="ml-2 h-5 w-5" />
             </motion.a>
           </div>
         </motion.div>

@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {['Home', 'ContentProvider', 'Search', 'Dashboard'].map((item) => (
+              {['Home', 'ContentProvider', 'Search', 'Dashboard', 'GraphChatBot'].map((item) => (
                 <motion.div key={item} whileHover={{ y: -2 }}>
                   <Link
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
@@ -52,7 +52,7 @@ const Navbar = () => {
           transition={{ duration: 0.2 }}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {['Home', 'Upload', 'Search', 'Dashboard'].map((item) => (
+            {['Home', 'Upload', 'Search', 'Dashboard', 'GraphChatBot'].map((item) => (
               <Link
                 key={item}
                 to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
